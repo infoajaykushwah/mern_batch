@@ -1,0 +1,17 @@
+
+<script>
+    var n=432, d1,d2,d3,max;
+    document.write("<h1>n = "+n+"</h1>");
+    d1=parseInt(n/100)%10;
+    d2=parseInt(n/10)%10;
+    d3=n%10;
+    document.write("<h1>d1 = "+d1+"</h1>");
+    document.write("<h1>d2 = "+d2+"</h1>");
+    document.write("<h1>d3 = "+d3+"</h1>");
+    if(d1>d2 && d1>d3){
+        document.write("<h1>max = "+d1+"</h1>");
+    }else if(d2>d1 && d2>d3){
+        document.write("<h1>max = "+d2+"</h1>");
+    }else
+        document.write("<h1>max = "+d3+"</h1>");
+</script>
