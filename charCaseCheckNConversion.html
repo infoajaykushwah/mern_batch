@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //WAP to check a single character string is upper or lower case & make cross case conversion
+        var s="A", n;
+        document.write('<h1> Before cas conversion'+s+"</h1>");
+        n=s.charCodeAt();
+        if(n>=65 && n<=90){
+            document.write('<h1> Upper case string</h1>');
+            s=String.fromCharCode(n+32);
+        }
+        else if(s>=97 && s<=122){
+            document.write('<h1>Lover case string</h1>');
+            s=String.fromCharCode(n-32);
+        }else
+            document.write('<h1>Invalid string</h1>');
+        document.write('<h1>After case conversion : '+s+'</h1>');
+    </script>
+</body>
+</html>
