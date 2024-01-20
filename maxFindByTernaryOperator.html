@@ -1,0 +1,12 @@
+<script>
+    //Finding max digit between 4digit number and user input
+    var num,a,b,c,d,max;
+    num=prompt('4digit number');
+    a=parseInt(num/1000)%10;
+    b=parseInt(num/100)%10;
+    c=parseInt(num/10)%10;
+    d=num%10;
+
+    max = (a>b && a>c && a>d)?a: ((b>c && b>d)?b: (c>d)?c:d);
+    document.write('<h1>max is ='+max+'</h1>');
+</script>
