@@ -1,0 +1,17 @@
+<script>
+//WAP to print fabonacii series upto first 10 elements
+//-1 1 0 1 1 2 3 5 8 13 21 .......... n elements 
+
+
+var a=-1,b=1,i=1,limit;
+limit=parseInt(prompt("Enter the value"));
+while(true){
+let c=a+b;
+if(c>limit)
+	break;
+document.write(c+"<br>");
+a=b;
+b=c;
+i++
+}
+</script>
