@@ -1,0 +1,20 @@
+<script>
+    /*
+    WAP to reverse array elements
+     0  1  2  3  4
+    ar=[10,20,30,40,50]
+     {logic}
+    ar=[50,40,30,20,10]*/
+
+    var ar=[10,20,30,40,50];
+    var l=ar.length;
+
+    document.write("Array before swap ["+ar+"]<br>");
+    for(let i=0, j=l-1; i<parseInt(l/2); i++, j--){
+        let tmp=ar[i];
+        ar[i]=ar[j];
+        ar[j]=tmp;
+    }
+    document.write("Array after swap ["+ar+"]");
+
+</script>
